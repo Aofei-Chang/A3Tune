@@ -1,0 +1,11 @@
+{"time":"2024-09-25T14:58:46.3707303-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T14:58:46.370761703-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_145846-ppswr55w/logs/debug-core.log"}
+{"time":"2024-09-25T14:58:46.370865768-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T14:58:46.370876314-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_145846-ppswr55w/logs/debug-core.log"}
+{"time":"2024-09-25T14:58:46.3762513-04:00","level":"INFO","msg":"created new stream","id":"ppswr55w"}
+{"time":"2024-09-25T14:58:46.376293449-04:00","level":"INFO","msg":"stream: started","id":"ppswr55w"}
+{"time":"2024-09-25T14:58:46.376346371-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ppswr55w"}}
+{"time":"2024-09-25T14:58:46.376312732-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"ppswr55w"}}
+{"time":"2024-09-25T14:58:46.376307692-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ppswr55w"}}
+{"time":"2024-09-25T14:58:46.592268859-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-25T14:58:46.593510382-04:00","level":"INFO","msg":"Starting system monitor"}

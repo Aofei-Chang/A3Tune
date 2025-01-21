@@ -1,0 +1,16 @@
+  0%|                                                                                                                                                                                                                                                                   | 0/675 [00:00<?, ?it/s]/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1652: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+odict_keys(['last_hidden_state', 'attentions']) None
+  total_norm_cuda = get_accelerator().FloatTensor([float(total_norm)])
+  1%|██▏                                                                                                                                                                                                                                                        | 6/675 [00:06<09:31,  1.17it/s]
+{'loss': 4.5296, 'learning_rate': 9.523809523809523e-06, 'epoch': 0.0}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 6.2309, 'learning_rate': 1.9047619047619046e-05, 'epoch': 0.01}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 5.7622, 'learning_rate': 2.857142857142857e-05, 'epoch': 0.01}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 7.1077, 'learning_rate': 3.809523809523809e-05, 'epoch': 0.02}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 5.4896, 'learning_rate': 4.761904761904762e-05, 'epoch': 0.02}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 3.2146, 'learning_rate': 5.714285714285714e-05, 'epoch': 0.03}
+odict_keys(['last_hidden_state', 'attentions']) None

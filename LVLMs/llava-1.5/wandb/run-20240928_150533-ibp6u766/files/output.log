@@ -1,0 +1,32 @@
+  0%|                                                                                                                                                                                  | 0/675 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/llava/train/train_mem.py", line 4, in <module>
+    train(attn_implementation="flash_attention_2")
+  File "/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/llava/train/train.py", line 1074, in train
+    trainer.train()
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/trainer.py", line 1836, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/accelerate/data_loader.py", line 384, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/llava/train/train.py", line 816, in __getitem__
+    mask = mask.cuda() if torch.cuda.is_available() else mask
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/cuda/__init__.py", line 284, in _lazy_init
+    raise RuntimeError(
+RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method

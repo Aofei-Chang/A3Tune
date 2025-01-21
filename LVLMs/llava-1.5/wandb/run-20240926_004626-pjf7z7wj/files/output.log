@@ -1,0 +1,66 @@
+  0%|                                                                                                                                                                                                                                                                   | 0/675 [00:00<?, ?it/s]/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/llava/train/train_mem.py", line 4, in <module>
+    train(attn_implementation="flash_attention_2")
+  File "/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/llava/train/train.py", line 983, in train
+    trainer.train()
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/trainer.py", line 2772, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/trainer.py", line 2795, in compute_loss
+    outputs = model(**inputs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1833, in forward
+    loss = self.module(*inputs, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/peft/peft_model.py", line 1577, in forward
+    return self.base_model(
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 188, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/llava/model/language_model/llava_llama.py", line 92, in forward
+    return super().forward(
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1191, in forward
+    outputs = self.model(
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1065, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 451, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/autograd/function.py", line 539, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 230, in forward
+    outputs = run_function(*args)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 808, in forward
+    bboxes=bboxes
+TypeError: unsupported operand type(s) for ** or pow(): 'list' and 'dict'

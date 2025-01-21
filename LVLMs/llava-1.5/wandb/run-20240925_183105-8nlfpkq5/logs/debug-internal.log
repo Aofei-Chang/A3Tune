@@ -1,0 +1,11 @@
+{"time":"2024-09-25T18:31:05.772619929-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T18:31:05.772635849-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_183105-8nlfpkq5/logs/debug-core.log"}
+{"time":"2024-09-25T18:31:05.772700223-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T18:31:05.772704723-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_183105-8nlfpkq5/logs/debug-core.log"}
+{"time":"2024-09-25T18:31:05.776152739-04:00","level":"INFO","msg":"created new stream","id":"8nlfpkq5"}
+{"time":"2024-09-25T18:31:05.776202694-04:00","level":"INFO","msg":"stream: started","id":"8nlfpkq5"}
+{"time":"2024-09-25T18:31:05.776220332-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"8nlfpkq5"}}
+{"time":"2024-09-25T18:31:05.776222194-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"8nlfpkq5"}}
+{"time":"2024-09-25T18:31:05.776273656-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"8nlfpkq5"}}
+{"time":"2024-09-25T18:31:05.993615579-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-25T18:31:05.995883299-04:00","level":"INFO","msg":"Starting system monitor"}

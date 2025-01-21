@@ -1,0 +1,21 @@
+{"time":"2024-09-25T15:11:29.783495246-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T15:11:29.783526568-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_151129-y44nip4j/logs/debug-core.log"}
+{"time":"2024-09-25T15:11:29.783651115-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T15:11:29.783661531-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_151129-y44nip4j/logs/debug-core.log"}
+{"time":"2024-09-25T15:11:29.788890034-04:00","level":"INFO","msg":"created new stream","id":"y44nip4j"}
+{"time":"2024-09-25T15:11:29.788938348-04:00","level":"INFO","msg":"stream: started","id":"y44nip4j"}
+{"time":"2024-09-25T15:11:29.788993323-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"y44nip4j"}}
+{"time":"2024-09-25T15:11:29.788974379-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"y44nip4j"}}
+{"time":"2024-09-25T15:11:29.788958167-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"y44nip4j"}}
+{"time":"2024-09-25T15:11:30.00652663-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-25T15:11:30.008719338-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-25T15:11:32.048424286-04:00","level":"INFO","msg":"stream: closing","id":"y44nip4j"}
+{"time":"2024-09-25T15:11:32.048459655-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-25T15:11:32.048656678-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-25T15:11:32.134054192-04:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-09-25T15:11:32.134075095-04:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-09-25T15:11:32.134079707-04:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-25T15:11:32.527762462-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"y44nip4j"}}
+{"time":"2024-09-25T15:11:32.527832258-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"y44nip4j"}}
+{"time":"2024-09-25T15:11:32.527850956-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"y44nip4j"}}
+{"time":"2024-09-25T15:11:32.528049705-04:00","level":"INFO","msg":"stream: closed","id":"y44nip4j"}

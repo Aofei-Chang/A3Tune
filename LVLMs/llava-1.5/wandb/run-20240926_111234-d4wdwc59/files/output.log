@@ -1,0 +1,28 @@
+  0%|                                                                                                                                                                                                                                                                               | 0/675 [00:00<?, ?it/s]/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+odict_keys(['last_hidden_state', 'attentions']) None
+/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1652: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  total_norm_cuda = get_accelerator().FloatTensor([float(total_norm)])
+  1%|███▉                                                                                                                                                                                                                                                                  | 10/675 [00:11<11:42,  1.06s/it]
+{'loss': 4.5296, 'learning_rate': 9.523809523809523e-06, 'epoch': 0.0}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 6.2309, 'learning_rate': 1.9047619047619046e-05, 'epoch': 0.01}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 5.7696, 'learning_rate': 2.857142857142857e-05, 'epoch': 0.01}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 7.065, 'learning_rate': 3.809523809523809e-05, 'epoch': 0.02}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 5.4221, 'learning_rate': 4.761904761904762e-05, 'epoch': 0.02}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 3.1599, 'learning_rate': 5.714285714285714e-05, 'epoch': 0.03}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 1.8825, 'learning_rate': 6.666666666666667e-05, 'epoch': 0.03}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 1.294, 'learning_rate': 7.619047619047618e-05, 'epoch': 0.04}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 1.5283, 'learning_rate': 8.571428571428571e-05, 'epoch': 0.04}
+odict_keys(['last_hidden_state', 'attentions']) None
+{'loss': 0.8369, 'learning_rate': 9.523809523809524e-05, 'epoch': 0.04}
+odict_keys(['last_hidden_state', 'attentions']) None

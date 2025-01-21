@@ -1,0 +1,21 @@
+{"time":"2024-09-25T19:10:54.372915512-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T19:10:54.372943957-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_191054-2j4y66yj/logs/debug-core.log"}
+{"time":"2024-09-25T19:10:54.373032612-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T19:10:54.37304049-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_191054-2j4y66yj/logs/debug-core.log"}
+{"time":"2024-09-25T19:10:54.37778552-04:00","level":"INFO","msg":"created new stream","id":"2j4y66yj"}
+{"time":"2024-09-25T19:10:54.377834429-04:00","level":"INFO","msg":"stream: started","id":"2j4y66yj"}
+{"time":"2024-09-25T19:10:54.377847439-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"2j4y66yj"}}
+{"time":"2024-09-25T19:10:54.377886927-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"2j4y66yj"}}
+{"time":"2024-09-25T19:10:54.377855571-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"2j4y66yj"}}
+{"time":"2024-09-25T19:10:54.587867207-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-25T19:10:54.589237088-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-25T19:23:27.3533891-04:00","level":"INFO","msg":"stream: closing","id":"2j4y66yj"}
+{"time":"2024-09-25T19:23:27.353451896-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-25T19:23:27.353877448-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-25T19:23:27.419839379-04:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-09-25T19:23:27.419892917-04:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-09-25T19:23:27.419910403-04:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-25T19:23:27.838838503-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"2j4y66yj"}}
+{"time":"2024-09-25T19:23:27.838933576-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"2j4y66yj"}}
+{"time":"2024-09-25T19:23:27.8389233-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"2j4y66yj"}}
+{"time":"2024-09-25T19:23:27.83919248-04:00","level":"INFO","msg":"stream: closed","id":"2j4y66yj"}

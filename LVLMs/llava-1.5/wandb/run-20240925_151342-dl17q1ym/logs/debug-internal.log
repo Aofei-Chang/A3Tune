@@ -1,0 +1,21 @@
+{"time":"2024-09-25T15:13:42.874569603-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T15:13:42.874601309-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_151342-dl17q1ym/logs/debug-core.log"}
+{"time":"2024-09-25T15:13:42.874720081-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-25T15:13:42.874730038-04:00","level":"INFO","msg":"created symlink","path":"/home/avc6555/research/MedH/Mitigation/LVLMs/llava-1.5/wandb/run-20240925_151342-dl17q1ym/logs/debug-core.log"}
+{"time":"2024-09-25T15:13:42.880004164-04:00","level":"INFO","msg":"created new stream","id":"dl17q1ym"}
+{"time":"2024-09-25T15:13:42.880051566-04:00","level":"INFO","msg":"stream: started","id":"dl17q1ym"}
+{"time":"2024-09-25T15:13:42.880085908-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"dl17q1ym"}}
+{"time":"2024-09-25T15:13:42.880101787-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"dl17q1ym"}}
+{"time":"2024-09-25T15:13:42.880064459-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"dl17q1ym"}}
+{"time":"2024-09-25T15:13:43.107061446-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-25T15:13:43.109324498-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-25T15:13:45.239214409-04:00","level":"INFO","msg":"stream: closing","id":"dl17q1ym"}
+{"time":"2024-09-25T15:13:45.239248577-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-25T15:13:45.239500544-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-25T15:13:45.414947001-04:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-09-25T15:13:45.414990597-04:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-09-25T15:13:45.415002286-04:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-25T15:13:45.792806278-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"dl17q1ym"}}
+{"time":"2024-09-25T15:13:45.792904237-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"dl17q1ym"}}
+{"time":"2024-09-25T15:13:45.792903712-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"dl17q1ym"}}
+{"time":"2024-09-25T15:13:45.793109747-04:00","level":"INFO","msg":"stream: closed","id":"dl17q1ym"}

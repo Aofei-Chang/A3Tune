@@ -1,0 +1,22 @@
+  0%|                                                                                                                                                                | 0/675 [00:00<?, ?it/s]/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/data/aofei/conda/env/llava_v1.5/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1652: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  total_norm_cuda = get_accelerator().FloatTensor([float(total_norm)])
+  2%|███▎                                                                                                                                                   | 15/675 [00:09<05:34,  1.97it/s]
+{'loss': 4.7223, 'learning_rate': 9.523809523809523e-06, 'epoch': 0.0}
+{'loss': 6.3503, 'learning_rate': 1.9047619047619046e-05, 'epoch': 0.01}
+{'loss': 5.1433, 'learning_rate': 2.857142857142857e-05, 'epoch': 0.01}
+{'loss': 6.3227, 'learning_rate': 3.809523809523809e-05, 'epoch': 0.02}
+{'loss': 6.0994, 'learning_rate': 4.761904761904762e-05, 'epoch': 0.02}
+{'loss': 4.7654, 'learning_rate': 5.714285714285714e-05, 'epoch': 0.03}
+{'loss': 3.6127, 'learning_rate': 6.666666666666667e-05, 'epoch': 0.03}
+{'loss': 2.7798, 'learning_rate': 7.619047619047618e-05, 'epoch': 0.04}
+{'loss': 1.7289, 'learning_rate': 8.571428571428571e-05, 'epoch': 0.04}
+{'loss': 1.9351, 'learning_rate': 9.523809523809524e-05, 'epoch': 0.04}
+{'loss': 1.9022, 'learning_rate': 0.00010476190476190477, 'epoch': 0.05}
+{'loss': 2.2627, 'learning_rate': 0.00011428571428571428, 'epoch': 0.05}
+{'loss': 2.1513, 'learning_rate': 0.0001238095238095238, 'epoch': 0.06}
+{'loss': 2.0952, 'learning_rate': 0.00013333333333333334, 'epoch': 0.06}
+{'loss': 1.6684, 'learning_rate': 0.00014285714285714287, 'epoch': 0.07}
