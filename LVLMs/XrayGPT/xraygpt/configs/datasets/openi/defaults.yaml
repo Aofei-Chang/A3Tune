@@ -1,5 +1,0 @@
-datasets:
-  openi:
-    data_type: images
-    build_info:
-      storage: /home/omkarthawakar/fahad/XrayGPT/dataset/openi

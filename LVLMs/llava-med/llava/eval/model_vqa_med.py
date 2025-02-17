@@ -334,7 +334,7 @@ def eval_model(args):
             key_position = {
                 "image_start": 39, 
                 "image_end": 39+256,
-                "response_start": input_ids.shape[1]
+                "response_start": input_ids.shape[1] + 256
             }
             with torch.inference_mode():
                 output_ids = model.generate(

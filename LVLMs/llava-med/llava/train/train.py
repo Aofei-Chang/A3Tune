@@ -31,7 +31,7 @@ from llava.train.llava_trainer import LLaVATrainer
 
 from llava import conversation as conversation_lib
 from llava import LlavaLlamaForCausalLM
-from llava.model.moe_llava import LoRA_MOE_FFN, LoRA_MOE_QK, LoRA_MOE_QK_old
+from llava.model.moe_llava import LoRA_MOE_QK, LoRA_MOE_QK_old
 
 from PIL import Image
 import torch.nn as nn
@@ -542,12 +542,6 @@ class LazySupervisedDataset(Dataset):
             # image does not exist in the data, but the model is multimodal
             crop_size = self.multimodal_cfg['image_processor'].crop_size
             data_dict['image'] = torch.zeros(3, crop_size['height'], crop_size['width'])
-            # print("no image, ", data_dict['image'])
-        # print(data_dict)
-        # image_start_index = torch.where(data_dict['input_ids'] == 32002)
-        # image_end_index = torch.where(data_dict['input_ids'] == 32003)
-        # print(image_start_index, image_end_index, "iamge token")
-        # print(data_dict['input_ids'], data_dict['input_ids'].size())
         # add bounding boxes
         if self.multimodal_cfg['use_bbox']:
             # if 'bboxes' in self.list_data_dict[i]:
