@@ -862,15 +862,7 @@ def train():
 
     data_module = make_supervised_data_module(tokenizer=tokenizer,
                                               data_args=data_args)
-    
-    # if training_args.bits == 16:
-    #     if training_args.bf16:
-    #         model.to(torch.bfloat16)
-    #     if training_args.fp16:
-    #         model.to(torch.float16)
-    # for i, p in model.model.named_parameters():
-    #     if p.requires_grad:
-    #         print(i)
+
 
     if training_args.lora_enable:
         from peft import LoraConfig, get_peft_model
@@ -878,13 +870,6 @@ def train():
         if training_args.use_moe:
             model.use_moe = True
             excluding_modules = ["k_proj", "q_proj"]
-            # excluding_modules = ["q_proj", "mlp", "o_proj", "k_proj"]
-            # if training_args.visual_expert_num > 1:
-            #     excluding_modules += ["k_proj"]
-            #     model.use_moe = True
-            # if training_args.query_expert_num > 1:
-            #     excluding_modules += ["q_proj"]
-            #     model.use_moe = True
         if training_args.do_attn_probing:
             excluding_modules = ["v_proj", "o_proj", "mlp"]
         lora_config = LoraConfig(
@@ -917,14 +902,9 @@ def train():
 
 
     if training_args.use_moe and training_args.lora_enable:
-        # assert self.args.use_lora
-        # assert  'gate_proj' not in self.args.lora_modules and \
-        #         'up_proj' not in self.args.lora_modules and \
-        #         'down_proj' not in self.args.lora_modules
         
         num_layers = len(model.base_model.model.model.layers)
         top_layers = []
-        # top_layers = [12, 13, 17, 18, 19, 20, 21, 22, 23, 26, 27, 28, 29, 30, 31]
         for i in range(num_layers):
             if len(top_layers)==0 or i in top_layers:
                 original_q = model.base_model.model.model.layers[i].self_attn.q_proj
@@ -961,23 +941,6 @@ def train():
                         lora_alpha=training_args.lora_alpha,
                         num_experts=1,
                         original_module=original_k)
-        # for (n,p) in model.named_parameters():
-        #     if p.requires_grad:
-        #         print(n)
-            # original_k = model.base_model.model.model.layers[i].self_attn.k_proj
-            # model.base_model.model.model.layers[i].self_attn.k_proj = \
-            #     LoRA_MOE_QK(args=training_args,
-            #         lora_rank=training_args.lora_r,
-            #         lora_alpha=training_args.lora_alpha,
-            #         num_experts=training_args.expert_num,
-            #         original_module=original_k).bfloat16()
-            # original_mlp = model.base_model.model.model.layers[i].mlp
-            # model.base_model.model.model.layers[i].mlp = \
-            #     LoRA_MOE_FFN(args=training_args,
-            #         lora_rank=training_args.lora_r,
-            #         lora_alpha=training_args.lora_alpha,
-            #         num_experts=training_args.expert_num,
-            #         original_module=original_mlp).bfloat16()
     
     training_args.find_unused_parameters = False
     trainer = LLaVATrainer(model=model,
@@ -988,9 +951,7 @@ def train():
     if training_args.lora_enable:
         trainer.model.print_trainable_parameters()
     
-    
-    # for name, param in model.named_parameters():
-    #     print(f"Layer: {name} | Dtype: {param.dtype}")
+
 
     if list(pathlib.Path(training_args.output_dir).glob("checkpoint-*")):
         trainer.train(resume_from_checkpoint=True)
@@ -1023,9 +984,5 @@ def train():
         non_lora_state_dict = get_peft_state_non_lora(
             model.named_parameters()
         )
-
-    # with open(os.path.join(training_args.output_dir, "probing_res.json"), "w") as f:
-    #     json.dump(attention_head_gradients, f, indent=2)
-
 if __name__ == "__main__":
     train()
