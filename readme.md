@@ -57,8 +57,8 @@ We release **training and testing metadata** (e.g., annotations, splits) in the 
 - **SLAKE:** https://www.med-vqa.com/slake/
 - **VQA-RAD:** [Kaggle Dataset Link](https://www.kaggle.com/datasets/shashankshekhar1205/vqa-rad-visual-question-answering-radiology/data)
 - **PathVQA:** https://www.scidb.cn/en/detail?dataSetId=b642b0f6572140d9b40f26b8b68b74e6
-- **IU-Xray:** [Google Drive Download](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view)
-- **OmniMedVQA:** https://openxlab.org.cn/datasets/GMAI/OmniMedVQA
+- **IU-Xray:** [Google Drive Download](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view) (*For the VQA, we follow the subset used in **CARES** ([GitHub Link](https://github.com/richard-peng-xia/CARES/tree/main)) and apply additional train/val/test splitting.*)
+- **OmniMedVQA:** https://openxlab.org.cn/datasets/GMAI/OmniMedVQA  *(We follow the subset used in **CARES** ([GitHub Link](https://github.com/richard-peng-xia/CARES/tree/main)) and apply additional train/val/test splitting.)*
 - **MIMIC-CXR-JPG:** [PhysioNet Link](https://physionet.org/content/mimic-cxr-jpg/2.1.0/)
 
 
