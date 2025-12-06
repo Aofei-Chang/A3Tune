@@ -1,0 +1,134 @@
+accelerate==0.21.0
+aiofiles==23.2.1
+altair==5.4.1
+annotated-types==0.7.0
+anyio==4.6.0
+asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1698341106958/work
+attrs==24.2.0
+bitsandbytes==0.44.0
+bytecode==0.16.0
+certifi==2024.8.30
+charset-normalizer==3.3.2
+click==8.1.7
+comm @ file:///home/conda/feedstock_root/build_artifacts/comm_1710320294760/work
+contourpy==1.3.0
+cycler==0.12.1
+debugpy @ file:///croot/debugpy_1690905042057/work
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
+deepspeed==0.12.6
+docker-pycreds==0.4.0
+einops==0.6.1
+einops-exts==0.0.4
+entrypoints @ file:///home/conda/feedstock_root/build_artifacts/entrypoints_1643888246732/work
+exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
+executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1725214404607/work
+fastapi==0.115.0
+ffmpy==0.4.0
+filelock==3.16.1
+flash-attn==2.6.3
+fonttools==4.54.0
+fsspec==2024.9.0
+ftfy==6.2.3
+gitdb==4.0.11
+GitPython==3.1.43
+gradio==4.16.0
+gradio_client==0.8.1
+h11==0.14.0
+hjson==3.1.0
+httpcore==0.17.3
+httpx==0.24.0
+huggingface-hub==0.25.1
+idna==3.10
+importlib_resources==6.4.5
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1696326070614/work
+Jinja2==3.1.4
+joblib==1.4.2
+jsonschema==4.23.0
+jsonschema-specifications==2023.12.1
+kiwisolver==1.4.7
+latex2mathml==3.77.0
+-e git+https://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@github.com/Aofei-Chang/VAT.git@523222a7e140ebe8e1b9ccf6524534bbfe34d1d4#egg=llava&subdirectory=LVLMs/llava-1.5
+markdown-it-py==3.0.0
+markdown2==2.5.0
+MarkupSafe==2.1.5
+matplotlib==3.9.2
+mdurl==0.1.2
+mpmath==1.3.0
+narwhals==1.8.2
+networkx==3.3
+ninja==1.11.1.1
+nltk==3.9.1
+numpy==1.26.4
+openai-clip==1.0.1
+opencv-python==4.10.0.84
+orjson==3.10.7
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+pandas==2.2.3
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1712320355065/work
+peft==0.12.0
+pexpect @ file:///home/conda/feedstock_root/build_artifacts/pexpect_1706113125309/work
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
+pillow==10.4.0
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1726613481435/work
+prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1727341649933/work
+protobuf==5.28.2
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1609419310487/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1721585709575/work
+py-cpuinfo==9.0.0
+pydantic==2.9.2
+pydantic_core==2.23.4
+pydub==0.25.1
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1714846767233/work
+pynvml==11.5.3
+pyparsing==3.1.4
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+python-multipart==0.0.10
+pytz==2024.2
+PyYAML==6.0.2
+pyzmq @ file:///croot/pyzmq_1705605076900/work
+referencing==0.35.1
+regex==2024.9.11
+requests==2.32.3
+rich==13.8.1
+rpds-py==0.20.0
+ruff==0.6.7
+safetensors==0.4.5
+scikit-learn==1.2.2
+scipy==1.14.1
+seaborn==0.13.2
+semantic-version==2.10.0
+sentencepiece==0.1.99
+sentry-sdk==2.14.0
+setproctitle==1.3.3
+shellingham==1.5.4
+shortuuid==1.0.13
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+smmap==5.0.1
+sniffio==1.3.1
+stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1669632077133/work
+starlette==0.38.6
+svgwrite==1.4.3
+sympy==1.13.3
+tabulate==0.9.0
+threadpoolctl==3.5.0
+timm==0.6.13
+tokenizers==0.15.1
+tomlkit==0.12.0
+# torch==2.1.2
+# torchvision==0.16.2
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1648827254365/work
+tqdm==4.66.5
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1713535121073/work
+# transformers==4.37.2
+triton==2.1.0
+typer==0.12.5
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+tzdata==2024.2
+urllib3==2.2.3
+uvicorn==0.30.6
+-e git+https://github.com/mrwu-mac/Visualizer@155d550fc82785e27ea8912a3ebd2112871dc232#egg=visualizer
+wandb==0.18.1
+wavedrom==2.0.3.post3
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1704731205417/work
+websockets==11.0.3

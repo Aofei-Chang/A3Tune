@@ -134,6 +134,106 @@ llava-med/llava/eval/
   llava-med/llava/eval/model_vqa_med.py
   ```
 
+
+
+### 🔧 Environment Setup
+
+#### 1.Modified Transformers (Installed as `transformers`)
+
+A³Tune requires a **patched version of HuggingFace Transformers**, customized for different Med-LVLM backbones.
+ Although these modified packages are stored in folders named:
+
+- `transformers_llava_med/`
+- `transformers_llava_med1_5/`
+
+they are **installed under the standard package name**:
+
+```python
+import transformers
+```
+
+This ensures that the rest of the codebase works seamlessly without changing imports.
+
+##### 📦 (1). Transformers for LLaVA-Med
+
+Folder: **`transformers_llava_med/`**
+ Installed package name: **`transformers`**
+
+This version supports:
+
+- LLaVA-Med
+- LLaVA-based Med-LVLMs compatible with A³Tune
+- Custom attention routing and alignment hooks
+
+##### Install it as `transformers`:
+
+```bash
+pip install -e ./transformers_llava_med
+```
+
+After installation:
+
+```python
+import transformers  # loads the patched version
+```
+
+##### 📦 (2). Transformers for LLaVA-Med 1.5
+
+Folder: **`transformers_llava_med1_5/`**
+ Installed package name: **`transformers`**
+
+This version includes adaptations required for:
+
+- LLaVA-Med 1.5 architecture
+- Its connector updates and multimodal token flow
+
+##### Install it as `transformers`:
+
+```bash
+pip install -e ./transformers_llava_med1_5
+```
+
+After installation:
+
+```python
+import transformers  # loads the LLaVA-Med 1.5–compatible version
+```
+
+##### ✔ Only install **one** version at a time
+
+You should install *either*:
+
+```
+pip install -e ./transformers_llava_med
+```
+
+or
+
+```
+pip install -e ./transformers_llava_med1_5
+```
+
+Installing both will cause conflicts because **both register under the same name: `transformers`**.
+
+####  2. Recommended Installation Workflow
+
+```bash
+# 1. Install PyTorch (choose the correct CUDA version)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 # we use torch==2.3.1
+
+# 2. Install the remaining packages
+pip install -r requirements.txt   # for LLaVA-Med
+pip install -r requirements_1_5.txt   # for LLaVA-Med 1.5
+
+# 3. Install exactly ONE patched transformers version
+pip install -e ./transformers_llava_med      # for LLaVA-Med
+# or
+pip install -e ./transformers_llava_med1_5   # for LLaVA-Med 1.5
+
+```
+
+## 
+
 #### ⚠️ Notes on `requirements.txt`
 
 The provided `requirements.txt` lists **the full environment** used for developing and evaluating A³Tune.
