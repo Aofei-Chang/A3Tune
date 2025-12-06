@@ -134,7 +134,21 @@ llava-med/llava/eval/
   llava-med/llava/eval/model_vqa_med.py
   ```
 
+#### ⚠️ Notes on `requirements.txt`
 
+The provided `requirements.txt` lists **the full environment** used for developing and evaluating A³Tune.
+ However, **not all packages are required for every use case**. Some modules (e.g., visualization tools, evaluation toolkits, dataset-specific loaders) may not be necessary depending on what you want to run.
+
+We do not recommend installing PyTorch directly from requirements.txt.
+Instead, you should install a PyTorch with CUDA version that matches your local CUDA setup.
+
+##### Why some packages might not be needed
+
+- Some dependencies are included for **training only**, not inference.
+- Some are used for specific datasets, not all of them.
+- Some visualization or evaluation libraries are optional (e.g., RadGraph for report generation evaluation).
+
+You may remove or ignore dependencies that are not relevant to your workflow.
 
 ### 📚 Reference
 
